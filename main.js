@@ -1,6 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
+var dot = require('dotenv').config();
 
 var app = http.createServer((request,response) => {
     var URL = request.url;
@@ -15,7 +16,7 @@ var app = http.createServer((request,response) => {
               <title>WEB1 - ${Title}</title>
             </head>
             <body>
-              <h1><a href="index.html">WEB</a></h1>
+              <h1><a href="/">WEB</a></h1>
               <ol>
                 <li><a href="/?id=HTML">HTML</a></li>
                 <li><a href="/?id=CSS">CSS</a></li>
